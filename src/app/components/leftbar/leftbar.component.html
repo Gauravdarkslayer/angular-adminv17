@@ -1,0 +1,18 @@
+<mat-drawer-container class="drawer-container" autosize>
+    <mat-toolbar color="primary" class="drawer-toolbar">
+        <button mat-icon-button (click)="drawer.toggle()"><mat-icon>menu</mat-icon></button>
+        <h1 class="example-app-name">Responsive App</h1>
+    </mat-toolbar>
+    <mat-drawer #drawer class="drawer-sidenav" mode="side" opened>
+        <p>Auto-resizing sidenav</p>
+        <button type="button" mat-button (click)="drawer.toggle()">
+            Toggle sidenav
+        </button>
+    </mat-drawer>
+
+    <div class="drawer-sidenav-content">
+
+        <ng-content select="router-outlet"></ng-content>
+    </div>
+
+</mat-drawer-container>

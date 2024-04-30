@@ -6,8 +6,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MAT_SNACK_BAR_DEFAULT_OPTIONS, MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
-import {MatIconModule} from '@angular/material/icon';
-import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [],
@@ -18,7 +19,12 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatCardModule,
     MatSnackBarModule,
     MatSidenavModule,
-    MatToolbarModule, MatButtonModule, MatIconModule, MatSidenavModule
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatInputModule,
+    MatMenuModule
   ],
   exports: [
     MatInputModule,
@@ -26,7 +32,12 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatCardModule,
     MatSnackBarModule,
     MatSidenavModule,
-    MatToolbarModule, MatButtonModule, MatIconModule, MatSidenavModule
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatInputModule,
+    MatMenuModule
   ],
   providers: [
     { provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: { duration: 2500 } }

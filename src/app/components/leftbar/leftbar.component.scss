@@ -8,3 +8,14 @@
 .drawer-sidenav {
     padding: 20px;
 }
+
+.mat-drawer {
+    width: 250px;
+    min-width: 250px;
+    max-width: 250px;
+}
+
+.active {
+    background-color: red;
+    color: white;
+}

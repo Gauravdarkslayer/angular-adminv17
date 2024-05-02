@@ -15,4 +15,5 @@ export const routes: Routes = [
         data: { header: true },
         loadChildren:()=> import('./modules/users/users.module').then(m=>m.UsersModule)
     },
+    { path: '**', redirectTo: '/auth/login' }
 ];
